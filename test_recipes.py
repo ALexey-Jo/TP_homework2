@@ -30,5 +30,4 @@ class TestIngredient:
         ing2 = Ingredient("Мука", 500, "кг")
         assert ing1 != ing2
     
-#Тесты для класса Recipe
 
