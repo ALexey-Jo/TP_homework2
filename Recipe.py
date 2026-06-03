@@ -4,11 +4,11 @@ class Recipe:
         self.ingredients = ingredients
     
     def add_ingridients(self, ingredient: Ingredient):
-        for i in self.ingredients:
-            if i == self.ingredient:
+        for i in self.ingredients:  
+            if i == ingredient:
                 i.quantity += ingredient.quantity
                 return 
-        self.ingredients.append(self.ingredient)
+        self.ingredients.append(ingredient)
 
     @staticmethod
     def is_valid_ratio(ratio):
@@ -18,7 +18,7 @@ class Recipe:
     
     def scale(self, ratio: float):
         new_ingr = [Ingredient(i.name, i.quantity * ratio, i.unit) for i in self.ingredients]
-        return Recipe(self.titlem, new_ingr)
+        return Recipe(self.title, new_ingr)
     
     def __len__(self):
         return len(self.ingredients)

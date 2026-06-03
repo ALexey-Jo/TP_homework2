@@ -1,6 +1,8 @@
-#Тесты для для класса Ingredient
 import pytest
 from Ingredient import Ingredient
+
+#Тесты для для класса Ingredient
+
 class TestIngredient:
     def _test_ing(self):
         ing = Ingredient("Мука", 500, "г")
@@ -27,3 +29,6 @@ class TestIngredient:
         ing1 = Ingredient("Мука", 500, "г")
         ing2 = Ingredient("Мука", 500, "кг")
         assert ing1 != ing2
+    
+#Тесты для класса Recipe
+
