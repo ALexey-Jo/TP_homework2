@@ -21,5 +21,5 @@ git clone <https://github.com/ALexey-Jo/TP_homework2/tree/main>
 
 cd <TP_homework2>
 
-
+запустите pytest
 
